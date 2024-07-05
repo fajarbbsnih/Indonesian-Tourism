@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism - Tarian Tradisional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Indonesian Tourism</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li>
+                <a href="cultures.html">Kebudayaan</a>
+                <ul class="submenu">
+                    <li><a href="cultures.html#traditional-dance">Tarian Tradisional</a></li>
+                    <li><a href="cultures.html#ceremonies">Upacara Adat</a></li>
+                    <li><a href="cultures.html#traditions">Tradisi</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="destinations.html">Destinasi</a>
+                <ul class="submenu">
+                    <li><a href="destinations.html#beaches">Pantai</a></li>
+                    <li><a href="destinations.html#mountains">Gunung</a></li>
+                    <li><a href="destinations.html#historical-sites">Situs Bersejarah</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="hotels.html">Hotel</a>
+            </li>
+            <li>
+                <a href="booking.html">Pemesanan</a>
+                <ul class="submenu">
+                    <li><a href="booking.html#tour-packages">Paket Wisata</a></li>
+                    <li><a href="booking.html#transportation">Transportasi</a></li>
+                    <li><a href="booking.html#activities">Aktivitas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="tour-packages" class="section">
+            <h2>Pemesanan Paket Wisata</h2>
+            <form id="booking-form" action="submit_booking.html" method="post">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Pilih Destinasi:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">--Pilih Destinasi--</option>
+                        <option value="Pantai Pink, Pulau Komodo">Pantai Pink, Pulau Komodo</option>
+                        <option value="Pantai Nihiwatu, Sumba">Pantai Nihiwatu, Sumba</option>
+                        <option value="Pantai Derawan, Kalimantan Timur">Pantai Derawan, Kalimantan Timur</option>
+                        <option value="Pantai Ora, Maluku Tengah">Pantai Ora, Maluku Tengah</option>
+                        <option value="Pantai Pandawa, Bali">Pantai Pandawa, Bali</option>
+                        <option value="Pantai Sawarna, Banten">Pantai Sawarna, Banten</option>
+                        <option value="Pantai Tanjung Bira, Sulawesi Selatan">Pantai Tanjung Bira, Sulawesi Selatan</option>
+                        <option value="Gunung Bromo, Jawa Timur">Gunung Bromo, Jawa Timur</option>
+                        <option value="Gunung Rinjani, Nusa Tenggara Barat">Gunung Rinjani, Nusa Tenggara Barat</option>
+                        <option value="Gunung Semeru, Jawa Timur">Gunung Semeru, Jawa Timur</option>
+                        <option value="Gunung Kerinci, Jambi">Gunung Kerinci, Jambi</option>
+                        <option value="Gunung Merapi, Jawa Tengah">Gunung Merapi, Jawa Tengah</option>
+                        <option value="Gunung Ijen, Jawa Timur">Gunung Ijen, Jawa Timur</option>
+                        <option value="Gunung Agung, Bali">Gunung Agung, Bali</option>
+                        <option value="Candi Borobudur, Jawa Tengah">Candi Borobudur, Jawa Tengah</option>
+                        <option value="Istana Maimun, Sumatra Utara">Istana Maimun, Sumatra Utara</option>
+                        <option value="Candi Prambanan, Yogyakarta dan Jawa Tengah">Candi Prambanan, Yogyakarta dan Jawa Tengah</option>
+                        <option value="Lawang Sewu, Jawa Tengah">Lawang Sewu, Jawa Tengah</option>
+                        <option value="Fort Rotterdam, Sulawesi Selatan">Fort Rotterdam, Sulawesi Selatan</option>
+                        <option value="Gedung Sate, Jawa Barat">Gedung Sate, Jawa Barat</option>
+                        <option value="Taman Sari, Yogyakarta">Taman Sari, Yogyakarta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Tanggal Keberangkatan:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="participants">Jumlah Peserta:</label>
+                    <input type="number" id="participants" name="participants" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FajarBbS - 211011450026</p>
+    </footer>
+
+    <script>
+        script.js
+    </script>
+</body>
+</html>
